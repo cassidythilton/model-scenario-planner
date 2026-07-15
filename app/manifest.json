@@ -1,0 +1,44 @@
+{
+  "id": "6fe21b29-bcc9-43ba-b73e-a2500c77b195",
+  "name": "LLM Market-Fit Harness",
+  "version": "0.1.0",
+  "fullpage": true,
+  "size": { "width": 1, "height": 1 },
+  "datasetsMapping": [],
+  "collectionsMapping": [
+    { "name": "llmharness_scenarios", "alias": "scenarios" },
+    { "name": "llmharness_model_configs", "alias": "modelConfigs" },
+    { "name": "llmharness_runs", "alias": "runs" },
+    { "name": "llmharness_evals", "alias": "evals" },
+    { "name": "llmharness_batches", "alias": "batches" },
+    { "name": "llmharness_scenario_sets", "alias": "scenarioSets" }
+  ],
+  "packagesMapping": [
+    {
+      "name": "bedrock-broker",
+      "alias": "runScenario",
+      "packageId": "1582c623-99a5-46f5-8641-f7159bc55071",
+      "version": "1.0.8",
+      "functionName": "runScenario",
+      "parameters": [
+        { "name": "scenario", "displayName": "scenario", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "scenario" },
+        { "name": "modelConfig", "displayName": "modelConfig", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "modelConfig" },
+        { "name": "repeatIndex", "displayName": "repeatIndex", "type": "decimal", "value": null, "nullable": true, "isList": false, "children": [], "entitySubType": null, "alias": "repeatIndex" },
+        { "name": "dryRun", "displayName": "dryRun", "type": "boolean", "value": null, "nullable": true, "isList": false, "children": [], "entitySubType": null, "alias": "dryRun" }
+      ],
+      "output": { "name": "result", "displayName": "result", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "result" }
+    },
+    {
+      "name": "scorer",
+      "alias": "scoreRun",
+      "packageId": "8580329d-c552-4613-96ab-3fc70178bc91",
+      "version": "1.0.4",
+      "functionName": "scoreRun",
+      "parameters": [
+        { "name": "scenario", "displayName": "scenario", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "scenario" },
+        { "name": "run", "displayName": "run", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "run" }
+      ],
+      "output": { "name": "result", "displayName": "result", "type": "object", "value": null, "nullable": false, "isList": false, "children": [], "entitySubType": null, "alias": "result" }
+    }
+  ]
+}

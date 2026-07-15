@@ -1,0 +1,27 @@
+Execute mutating action: Create Code Engine package? [y/N]: {
+  "id": "1582c623-99a5-46f5-8641-f7159bc55071",
+  "name": "bedrock-broker",
+  "description": "LLM Market-Fit Harness — brokers Amazon Bedrock Converse calls (SigV4-signed) using a mapped Domo Account.",
+  "language": "JAVASCRIPT",
+  "environment": "LAMBDA",
+  "availability": "PRIVATE",
+  "owner": "145115780",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "description": "",
+      "createdBy": "145115780",
+      "released": null,
+      "functions": [],
+      "configuration": {
+        "accountsMapping": [],
+        "mlModel": [],
+        "externalPackageMapping": {}
+      }
+    }
+  ],
+  "users": [],
+  "createdOn": "2026-06-02T04:59:20.125Z",
+  "updatedOn": "2026-06-02T04:59:20.188Z",
+  "packageSource": "CUSTOM"
+}

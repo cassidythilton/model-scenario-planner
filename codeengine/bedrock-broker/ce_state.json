@@ -1,0 +1,96 @@
+{
+  "id": "1582c623-99a5-46f5-8641-f7159bc55071",
+  "name": "bedrock-broker",
+  "description": "LLM Market-Fit Harness — brokers Amazon Bedrock Converse calls (SigV4-signed) using a mapped Domo Account.",
+  "language": "JAVASCRIPT",
+  "environment": "LAMBDA",
+  "availability": "PRIVATE",
+  "owner": "145115780",
+  "versions": [
+    {
+      "version": "1.0.3",
+      "description": null,
+      "createdBy": "145115780",
+      "released": null,
+      "functions": [
+        {
+          "name": "runScenario",
+          "displayName": "Run Scenario",
+          "description": "Runs one scenario against one model config via Bedrock Converse. Supports dryRun + throttle handling.",
+          "isPrivate": false,
+          "inputs": [
+            {
+              "name": "scenario",
+              "displayName": "scenario",
+              "type": "object",
+              "value": null,
+              "nullable": false,
+              "isList": false,
+              "children": [],
+              "entitySubType": null
+            },
+            {
+              "name": "modelConfig",
+              "displayName": "modelConfig",
+              "type": "object",
+              "value": null,
+              "nullable": false,
+              "isList": false,
+              "children": [],
+              "entitySubType": null
+            },
+            {
+              "name": "repeatIndex",
+              "displayName": "repeatIndex",
+              "type": "decimal",
+              "value": null,
+              "nullable": true,
+              "isList": false,
+              "children": [],
+              "entitySubType": null
+            },
+            {
+              "name": "dryRun",
+              "displayName": "dryRun",
+              "type": "boolean",
+              "value": null,
+              "nullable": true,
+              "isList": false,
+              "children": [],
+              "entitySubType": null
+            },
+            {
+              "name": "bedrockAccount",
+              "displayName": "bedrockAccount",
+              "type": "ACCOUNT",
+              "value": null,
+              "nullable": true,
+              "isList": false,
+              "children": [],
+              "entitySubType": "amazon-bedrock"
+            }
+          ],
+          "output": {
+            "name": "result",
+            "displayName": "result",
+            "type": "object",
+            "value": null,
+            "nullable": true,
+            "isList": false,
+            "children": [],
+            "entitySubType": null
+          }
+        }
+      ],
+      "configuration": {
+        "accountsMapping": [],
+        "mlModel": [],
+        "externalPackageMapping": {}
+      }
+    }
+  ],
+  "users": [],
+  "createdOn": "2026-06-02T04:59:20.125Z",
+  "updatedOn": "2026-06-04T20:12:54.479Z",
+  "packageSource": "CUSTOM"
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+.env
+.env.*
+app/dist/
+app/node_modules/
+# Domo publish artifacts
+.domo/
+*.domoapp
+# never commit credential material
+*credentials*
+*.pem
+secrets.json
+# Bedrock API key + build artifacts that embed it
+key
+bedrock-long-term-api-key.csv
+*api-key*.csv
+codeengine/**/payload.json
