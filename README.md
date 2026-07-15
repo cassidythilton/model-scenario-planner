@@ -63,15 +63,11 @@ A 28-second walkthrough of the live Playground: pick a scenario, run the full mo
 
 <p align="center">
   <a href="docs/media/llm-scenarios-screen.mp4">
-    <img src="docs/media/demo-poster.jpg" alt="LLM Scenario Comparison — live Playground walkthrough" width="900" />
+    <img src="docs/media/demo.gif" alt="LLM Scenario Comparison — live Playground walkthrough" width="900" />
   </a>
 </p>
 
-<p align="center">
-  <video src="https://github.com/cassidythilton/model-scenario-planner/raw/main/docs/media/llm-scenarios-screen.mp4" poster="docs/media/demo-poster.jpg" controls muted width="900"></video>
-</p>
-
-> If the player does not load inline, [watch the demo directly](docs/media/llm-scenarios-screen.mp4).
+> Click the animation for the full-resolution [screen recording](docs/media/llm-scenarios-screen.mp4) (with audio).
 
 ---
 
